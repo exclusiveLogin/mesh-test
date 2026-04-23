@@ -1,0 +1,35 @@
+{
+  "name": "mesh-test",
+  "version": "1.0.0",
+  "description": "Meshtastic producer/consumer CLI demo",
+  "main": "dist/index.js",
+  "scripts": {
+    "producer": "tsx src/producer/index.ts",
+    "consumer": "tsx src/consumer/index.ts",
+    "build": "tsc -p tsconfig.json",
+    "typecheck": "tsc --noEmit -p tsconfig.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/exclusiveLogin/mesh-test.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/exclusiveLogin/mesh-test/issues"
+  },
+  "homepage": "https://github.com/exclusiveLogin/mesh-test#readme",
+  "devDependencies": {
+    "@types/node": "^25.6.0",
+    "tsx": "^4.21.0",
+    "typescript": "^6.0.3"
+  },
+  "dependencies": {
+    "@meshtastic/core": "^2.6.7",
+    "@meshtastic/transport-http": "^0.2.5",
+    "chalk": "^5.6.2",
+    "dotenv": "^17.4.2"
+  }
+}
